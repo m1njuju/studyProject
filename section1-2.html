@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 제이쿼리 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/common.css" href="reset.css">
+    <link rel="stylesheet" href="./css/main.css" href="reset.css">
+
+    <!-- 제이쿼리 플러그인 -->
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+</head>
+<body>
+    <div id="header_wrap">
+        <header class="header_inner">
+            <!-- 모바일 메뉴로도 활용하기위헤 moblie_meue_open 버튼 추가 -->
+			<p class="mobile_menu_open">
+				<button>
+                    <span class="blind">메뉴 열기</span>
+					<!--CSS로 표현된 햄버거아이콘-->
+                    <span></span>
+                    <span></span>
+                    <span></span>
+				</button>
+			</p>
+            <!-- 모바일 메뉴로도 활용하기위헤 mobile_menu_wra추가 -->
+			<div class="mobile_menu_wrap">
+				<div class="mobile_menu_scroll">
+					<!-- 유틸메뉴 -->
+					<ul class="util_menu">
+						<!--** 직접 작성할 공간 **-->
+						<li><a href="#">회원가입</a></li>
+						<li><a href="#">로그인</a></li>
+					</ul>
+
+                    <!-- 글로벌네비게이션바 시작 -->
+					<nav id="gnb">
+						<ul>
+                            <li>
+                                <a href="#">
+                                    <img src="http://www.oceanplan.co.kr/img/m_logo.png" alt="logo_img">
+                                </a>
+                            </li>
+							<!-- 메뉴1 -->
+							<li class="m1">
+								<a href="#">회사소개</a>
+								<!-- 서브메뉴1 -->
+								<ul>
+									<li><a href="#">인사말</a></li>
+									<li><a href="#">회사소개</a></li>
+									<li><a href="#">오시는 길</a></li>
+								</ul>
+							</li>
+							<!-- 메뉴2 -->
+                            <li class="m2"><a href="#">해양시스템</a></li>
+                            <!-- 메뉴3 -->
+                            <li class="m3"><a href="#">해양환경 분야</a></li>
+                            <!-- 메뉴4 -->
+                            <li class="m4"><a href="#">홈케어 시스템</a></li>
+                            <!-- 메뉴5 -->
+							<li class="m5">
+								<a href="#">기술지원</a>
+								<!-- 서브메뉴2 -->
+								<ul>
+									<li><a href="#">기술지원</a></li>
+									<li><a href="#">기술컨설팅</a></li>
+								</ul>
+							</li>
+							<!-- 메뉴6 -->
+							<li class="m6">
+								<a href="#">커뮤니티</a>
+								<!-- 서브메뉴3 -->
+								<ul>
+									<li><a href="#">공지사항</a></li>
+									<li><a href="#">보도자료</a></li>
+									<li><a href="#">자료실</a></li>
+									<li><a href="#">문의하기</a></li>
+								</ul>
+							</li>
+						</ul>
+                        <button class="gnb_btn">문의하기</button>
+					</nav>
+					<!-- 글로벌네비게이션바 끝 -->
+				</div>
+
+				<!-- 모바일 메뉴로도 활용하기위헤 mobile_menu_close 버튼 추가 -->
+				<p class="mobile_menu_close">
+					<button>
+						<span class="blind">메뉴닫기</span>
+						<span></span>
+						<span></span>
+					</button>
+				</p>
+				
+			</div>
+
+        </header>
+    </div>
+
+    <div id="container">
+        <!-- 이미지 슬라이더 섹션 -->
+        <section id="main_visual" class="rounded">
+            <!-- main_visual_slide 에 이미지 슬라이더 시작 -->
+            <div class="main_visual_slide">
+                <div>
+                    <div class="visual_item_wrap item1">
+                        <h1 class="visual_title"> The Future</h1>
+                        <p>
+                            <span>미래에도 아름다운 해양, 오션플랜의 가치입니다.</span>
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <div class="visual_item_wrap item2">
+                        <h1 class="visual_title"> The Environmet</h1>
+                        <p>
+                            <span>해양과 어우러져 살아가는 환경, 오션플랜의 가치입니다.</span>
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <div class="visual_item_wrap item3">
+                        <h1 class="visual_title"> The Safety</h1>
+                        <p>
+                            <span>사람과 해양이 함께하는 건강, 오션플랜의 가치입니다.</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- main_visual_slide 에 이미지 슬라이더 끝-->
+        </section>
+        <!-- //이미지 슬라이더 섹션 -->
+
+
+        <!-- 공지사항 -->
+        <section>
+            <div class="notic_section">
+                <h3>공지사항</h3>
+                <p>-<a class="notic_a" href="#">공지사항 테스트입니다.</a><span>2022-04-05</span>
+                    <a class="notic_btn" href="#"><button>전체보기</button> </a></p>
+            </div>
+        </section>
+
+        <!-- 메인 섹션 -->
+        <section>
+            <div class="section_1">
+                <h1>해양시스템</h1>
+        
+                <div class="ocean_system">
+                    <ul>
+                        <li>
+                            <img src="./img/system01.png" alt="system01" width="280px">
+                            <h4>ROV[ remotely operated vehicle ]</h4>
+                        </li>
+                        <li>
+                            <img src="./img/system02.png" alt="system02" width="280px">
+                            <h4>수중 스쿠터</h4>
+                        </li>
+                        <li>
+                            <img src="./img/system03.png" alt="system03" width="280px">
+                            <h4>무인 수상 선박</h4>
+                        </li>
+                        <li>
+                            <img src="./img/system04.png" alt="system04" width="280px">
+                            <h4>해양 미세 쓰레기 수거 로봇</h4>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <div class="section_2">
+                <h1>해양환경 분야</h1>
+
+                <ul>
+                    <li>항만 수중 항타 소음 측정</li>
+                    <li>부산∼김해 경전철 수중소음분석</li>
+                    <li>고래 충돌방지 소나</li>
+                </ul>
+            </div>
+        </section>
+        </div>
+    
+
+    <script src="./js/common.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

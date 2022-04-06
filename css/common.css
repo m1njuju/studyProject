@@ -1,0 +1,177 @@
+body * {
+    margin: 0;
+}
+
+/* header 영역 */
+#header_wrap{
+    margin-bottom: 40px;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    
+}
+.header_inner{
+    position: relative;
+    height: 100px;
+}
+
+.header_inner {max-width:1008px;margin-left: 53px;margin-top: 20px;}
+
+
+/* 유틸 메뉴 영역 */
+.util_menu{position: absolute;right: 0;top: 0;font-size: 12px;
+    list-style: none; }
+.util_menu li{float: left;padding-left: 10px;  margin-left:8px; }
+.util_menu li:first-child{
+    background: none;
+    margin-left: 0;
+    padding: 0;
+}
+
+.util_menu a{color: #000;display: block;height:38px;line-height:38px; text-decoration: none;}
+
+
+/* 글로벌 네비게이션 바 영역 */
+/* 직접 작성할 공간 */
+#gnb { position: absolute; left: 0; bottom: 0; width: 100%; z-index: 100;}
+
+#gnb ul {
+    list-style: none; margin: -70px -100px 0 50px; display: block; 
+}
+#gnb > ul > li { width: 10%; float: left; position: relative; left: 15px; display: block;
+                padding-right: 15px;}
+#gnb > ul > li > a { color: #000; font-size: 16px; text-align: center; font-weight: bold;
+                    height: 45px; text-decoration: none;}
+#gnb > ul > li > a > img { margin-left: -120px; margin-top: -30px;}
+
+#gnb > ul > li > a:hover {
+    color: red;
+}
+
+/* 글로벌 네비게이션 바 영역 중 서브메뉴  */
+/* 직접 작성할 공간 */
+#gnb ul ul {
+    display: none;
+    position: absolute; left: 50%; top: 100px;
+    width: 100%; margin-left: -90px;
+    background-color: #fff;
+    border-top: none; border-radius: 0 0 7px 7px; font-size: 15px;
+}
+.resize { height: 800px;}
+#gnb ul ul a { display: block;
+    height: 40px; line-height: 40px; text-decoration: none; color: black;}
+
+.gnb_btn {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    left: 920px;
+    bottom: 30px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+
+/* 모바일 메뉴 영역 */
+.mobile_menu_open{
+    position: absolute;
+    right: 10px;
+    top: 0;
+    display: none;
+}    
+.mobile_menu_open button{
+    width: 40px;
+    height: 40px;
+    background:none;
+    border: none;
+}
+.mobile_menu_open button span:first-child ~ span{
+    height: 4px;
+    width:30px;
+    border-radius: 2px;
+    position: absolute;
+    background-color: #000;
+    top: 50%;
+    left: 50%;
+    margin-top: -2px;
+    margin-left: -15px;
+}
+.mobile_menu_open button span:first-child + span{
+    margin-top: -13px;
+}
+.mobile_menu_open button span:first-child + span + span{
+    margin-top: 10px;
+}
+.mobile_menu_close{display: none;position: absolute;top:4px;right: 22px;}
+
+.mobile_menu_close button{
+    width: 30px;
+    height:30px;
+    background: #333;
+    border: 1px solid #aaa;
+}
+.mobile_menu_close button span:first-child ~ span{
+    width:26px;
+    position: absolute;
+    border-bottom: 1px solid #aaa;
+    top: 50%;
+    left: 50%;
+    margin-top: -1px;
+    margin-left: -13px;
+    transform: rotate(-45deg);
+}
+.mobile_menu_close button span:first-child + span{
+    transform: rotate(45deg);
+}
+
+/*공지사항 섹션*/
+.notic_section {
+    background-color: rgba(255,0,0,0.65);
+    color: white;
+    height: 90px;
+}
+.notic_section h3 {
+    position: relative;
+    left: 60px;
+    top: 35px;
+}
+.notic_section p {
+    font-size: 17px;
+    font-weight: bold;
+    position: relative;
+    left: 180px;
+    top: 6px
+}
+.notic_section p>.notic_a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+    width: 700px;
+    position: relative;
+    left: 20px;
+    bottom: 20px;
+}
+.notic_section p>span {
+    position: relative;
+    left: 760px;
+    bottom: 55px;
+}
+.notic_section p>.notic_btn > button {
+    border: 1px solid white;
+    color: white;
+    background-color: transparent;
+    font-size: 17px;
+    padding: 10px 17px;
+    position: relative;
+    left: 900px;
+    bottom: 50px;
+}
+
+
+
